@@ -3,11 +3,6 @@ name: Build
 on:
   workflow_dispatch:
   push:
-    paths-ignore:
-      - '.idea/copyright/*.xml' 
-      - '.gitignore'
-      - 'LICENSE'
-      - 'README.md'
 
 jobs:
   build:
