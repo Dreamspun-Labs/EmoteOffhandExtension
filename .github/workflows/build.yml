@@ -27,7 +27,7 @@ jobs:
         if: ${{ success() && github.repository == 'GeyserMC/EmoteOffhandExtension' && github.ref_name == 'master' }}
         id: get-version
         run: |
-          version=$(cat build.gradle | grep -o "version '[0-9\\.]*'" | cut -d" " -f2 | sed "s/'//g")
+          version=$(cat gradle.properties | grep -o "version=[0-9\\.]*" | cut -d"=" -f2)
           echo "VERSION=${version}" >> $GITHUB_OUTPUT
 
       - name: Get Release Metadata

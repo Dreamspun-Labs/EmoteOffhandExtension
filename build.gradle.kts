@@ -2,9 +2,6 @@ plugins {
     id("java")
 }
 
-group = "org.geysermc.extension.emoteoffhand"
-version = "1.0.0"
-
 repositories {
     mavenCentral()
     maven("https://repo.opencollab.dev/main")
