@@ -7,7 +7,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Setup Gradle
         uses: GeyserMC/actions/setup-gradle-composite@master
